@@ -6,17 +6,29 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier:format": "prettier --config .prettierrc 'app/**' 'pages/' --write"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.6.1",
+    "@types/react-redux": "^7.1.18",
+    "@types/redux-logger": "^3.0.9",
+    "axios": "^0.21.4",
     "next": "11.1.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.5",
+    "redux-logger": "^3.0.6"
   },
   "devDependencies": {
     "@types/react": "17.0.21",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.4.0",
     "typescript": "4.4.3"
   }
 }
