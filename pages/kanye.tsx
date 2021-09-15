@@ -1,6 +1,6 @@
 import React from 'react';
-import { useAppDispatch, useAppSelector } from '../app/hooks';
-import { getKanyeQuote, selectKanye } from '../app/features/kanye/kanyeSlice';
+import { useAppDispatch, useAppSelector } from '@app/hooks';
+import { getKanyeQuote, selectKanye } from '@app/features/kanye/kanyeSlice';
 
 const Kanye: React.FC = () => {
   const dispatch = useAppDispatch();

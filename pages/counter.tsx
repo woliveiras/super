@@ -1,18 +1,14 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
-
 import { useState } from 'react';
 
-import { useAppDispatch, useAppSelector } from '../app/hooks';
+import { useAppDispatch, useAppSelector } from '@app/hooks';
 
 import {
   decrement,
   increment,
   incrementByAmount,
   selectCount,
-} from '../app/features/counter/counterSlice';
+} from '@app/features/counter/counterSlice';
 
 const Home: NextPage = () => {
   const dispatch = useAppDispatch();
